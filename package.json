@@ -1,0 +1,19 @@
+{
+  "name": "defrag2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "^20.14.11",
+    "esbuild": "^0.23.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
