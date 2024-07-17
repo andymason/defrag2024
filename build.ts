@@ -1,7 +1,7 @@
 import * as esbuild from "esbuild";
 import path from "node:path";
 
-const MAIN_FILE = path.join(__dirname, "src", "main.ts");
+const MAIN_FILE = path.join(__dirname, "src", "main.tsx");
 const OUT_FOLDER = path.join(__dirname, "www");
 
 async function build(): Promise<void> {

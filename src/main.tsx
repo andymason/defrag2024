@@ -1,6 +1,10 @@
 import "./main.css";
+import { render } from "preact";
+import { App } from "./app";
 
-console.log("Hello World!");
+
+render(<App />, document.body);
+
 
 /**
  * # Core ideas

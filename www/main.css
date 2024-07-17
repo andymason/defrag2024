@@ -46,9 +46,13 @@ body {
   grid-column: 1/-1;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2px;
   .grid__cell {
     width: 2%;
     height: 6%;
+    background-color: red;
   }
 }
 .status {
