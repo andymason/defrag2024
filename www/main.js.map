@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../src/main.ts"],
-  "sourcesContent": ["console.log(\"Hello World!\");"],
-  "mappings": ";;;AAAA,UAAQ,IAAI,cAAc;",
-  "names": []
+  "sourcesContent": ["import \"./main.css\";\n\nconsole.log(\"Hello World!\");\n\n/**\n * # Core ideas\n *\n * - Animate defrag\n * - Options\n *  - HD size\n *  - HD speed\n *  - Theme\n *  - Sound on/off\n *  - Damage level\n *\n */\n\nenum Theme {\n  Win95 = \"Win95\",\n  Dos = \"Dos\",\n}\n\ninterface DefragOptions {\n  hdSize: number;\n  hdSpeed: number;\n  theme: Theme;\n  sound: boolean;\n  damageLevel: number;\n}\n\nenum SectorState {\n  Used = \"User\",\n  Reading = \"Reading\",\n  Bad = \"Bad\",\n  Unused = \"Unused\",\n  Writing = \"Writing\",\n  Unmoved = \"Unmoved\",\n}\n\nconst defaultOptions: DefragOptions = {\n  hdSize: 10,\n  hdSpeed: 7,\n  theme: Theme.Dos,\n  sound: true,\n  damageLevel: 3,\n};\n\nexport { type DefragOptions, defaultOptions, SectorState };\n"],
+  "mappings": ";;;AAEA,UAAQ,IAAI,cAAc;AA4B1B,MAAK,cAAL,kBAAKA,iBAAL;AACE,IAAAA,aAAA,UAAO;AACP,IAAAA,aAAA,aAAU;AACV,IAAAA,aAAA,SAAM;AACN,IAAAA,aAAA,YAAS;AACT,IAAAA,aAAA,aAAU;AACV,IAAAA,aAAA,aAAU;AANP,WAAAA;AAAA,KAAA;AASL,MAAM,iBAAgC;AAAA,IACpC,QAAQ;AAAA,IACR,SAAS;AAAA,IACT,OAAO;AAAA,IACP,OAAO;AAAA,IACP,aAAa;AAAA,EACf;",
+  "names": ["SectorState"]
 }
